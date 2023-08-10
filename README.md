@@ -1,2 +1,2 @@
 # Project-AdminDashboard
-A projecct from The Odin Project.
+A project from The Odin Project.
