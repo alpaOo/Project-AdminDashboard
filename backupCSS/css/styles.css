@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  line-height: 1.6;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #fafafa;
+  display: flex;
+  justify-content: center;
+}
+body .container {
+  display: grid;
+  grid-template-columns: 1fr 6fr;
+  grid-auto-flow: column;
+  gap: 50px;
+}
+body .container .sidebar {
+  background-color: #e5e5e5;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  grid-row: 1/3;
+  padding-left: 1rem;
+}
+body .container .sidebar nav {
+  display: grid;
+  gap: 30px;
+}
+body .container .sidebar nav ul:nth-child(1),
+body .container .sidebar nav ul:nth-child(2) {
+  gap: 10px;
+}
+body .container .sidebar nav ul:nth-child(1) li,
+body .container .sidebar nav ul:nth-child(2) li {
+  list-style: none;
+}
+body .container .column-2 {
+  padding-right: 50px;
+  display: grid;
+  grid-row: 1/3;
+  grid-template-rows: 1fr 25fr;
+  gap: 15px;
+}
+body .container .column-2 .top-section {
+  display: grid;
+  gap: 15px;
+}
+body .container .column-2 .main-content {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-auto-flow: row;
+  gap: 50px;
+}
+body .container .column-2 .main-content .projects {
+  grid-row: 1/3;
+  display: grid;
+  grid-template-rows: 30px 1fr;
+  gap: 15px;
+}
+body .container .column-2 .main-content .projects .cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 40vh);
+  gap: 30px;
+  text-align: justify;
+}
+body .container .column-2 .main-content .projects .cards article {
+  box-shadow: 0 0 10px 0.5px #e4e4e7;
+  border-radius: 5px;
+  padding: 10px;
+}
+body .container .column-2 .main-content .aside {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+body .container .column-2 .main-content .aside .announcements,
+body .container .column-2 .main-content .aside .trending {
+  display: grid;
+  grid-template-rows: 30px 1fr;
+  gap: 15px;
+}
+body .container .column-2 .main-content .aside .announcements .cards,
+body .container .column-2 .main-content .aside .trending .cards {
+  box-shadow: 0 0 10px 0.5px #e4e4e7;
+  border-radius: 5px;
+  padding: 10px;
+  display: grid;
+  gap: 15px;
+}
+body .container .column-2 .main-content .aside .announcements .cards article,
+body .container .column-2 .main-content .aside .trending .cards article {
+  border: 1px solid red;
+}/*# sourceMappingURL=styles.css.map */
